@@ -1,0 +1,6 @@
+FROM node:latest
+
+RUN git clone https://github.com/wireapp/wire-desktop.git
+WORKDIR "/wire-desktop"
+RUN corepack enable && corepack prepare yarn@stable --activate && yarn set version 3.3.0 && yarn install
+CMD ["yarn run","yarn start"]

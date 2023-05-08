@@ -1,0 +1,2 @@
+FROM wire_node_app
+CMD yarn test
