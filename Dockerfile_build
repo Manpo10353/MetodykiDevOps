@@ -1,6 +1,6 @@
 FROM node:20
 
-RUN git clone https://github.com/wireapp/wire-desktop.git
+RUN git clone https://github.com/Manpo10353/wire-desktop.git
 WORKDIR "/wire-desktop"
 RUN corepack enable && corepack prepare yarn@stable --activate && yarn set version 3.3.0 && yarn install
 RUN apt-get update && apt-get install -y libnss3 libnspr4 libgtk-3-0 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2
