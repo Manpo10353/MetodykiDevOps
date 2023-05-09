@@ -1,2 +1,2 @@
-FROM wire_node_app
+FROM wire_app_image:1.1
 RUN yarn test
